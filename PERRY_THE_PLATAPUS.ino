@@ -17,15 +17,15 @@ int loop_time = 20;
 bool agent_mode=false;
 bool chat_mode=false;
 //Pin setup
-const PIN_MAG = A0;
-const PIN_LIM = A1;
-const PIN_SER = D6;
+const int PIN_MAG = A0;
+const int PIN_LIM = A1;
+const int PIN_SER = 6;
 int V_mag=0;
 int V_lim=0;
 
 //Sensing Bounds
-const MAG_THRESH = 4.3;
-const LIM_THRESH = 4.9;
+const int MAG_THRESH = 4.3;
+const int LIM_THRESH = 4.9;
 //Sensor Previous State bools
 bool prev_mag = false;
 bool prev_lim = false;
@@ -48,8 +48,8 @@ void setup() {
   }
   Serial.println("Motor Shield found.");
   Facemotor->setSpeed(150);
-  V_mag=analogread(PIN_MAG);
-  V_lim=analogread(PIN_LIM);
+  V_mag=analogRead(PIN_MAG);
+  V_lim=analogRead(PIN_LIM);
   //put servo setup code here
 }
 
@@ -63,7 +63,7 @@ void loop() {
   //Mag switch detection and toggle
   if (V_mag >= MAG_THRESH && !prev_mag){
     agent_mode=true;
-    prev_mag= true:
+    prev_mag= true;
   }
   else if (V_mag >= MAG_THRESH && prev_mag){
     //do nothing
