@@ -1,0 +1,1058 @@
+{
+  "version": 1,
+  "components": [],
+  "drawings": [
+    {
+      "id": "drawing-1791240945129-drc9",
+      "toolId": "rectangle",
+      "x": 230,
+      "y": 90,
+      "rotation": 0,
+      "strokeColor": "#4f80ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 160,
+      "shapeHeight": 240
+    },
+    {
+      "id": "drawing-1791300715368-i5xq",
+      "toolId": "text",
+      "x": 170,
+      "y": 60,
+      "rotation": 0,
+      "text": "3v3",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300716558-alcc",
+      "toolId": "text",
+      "x": 170,
+      "y": 80,
+      "rotation": 0,
+      "text": "5V",
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300717429-uk7z",
+      "toolId": "text",
+      "x": 170,
+      "y": 100,
+      "rotation": 0,
+      "text": "GND",
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300718232-kh3r",
+      "toolId": "text",
+      "x": 170,
+      "y": 120,
+      "rotation": 0,
+      "text": "GND",
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300718939-4emw",
+      "toolId": "text",
+      "x": 170,
+      "y": 140,
+      "rotation": 0,
+      "text": "A0",
+      "strokeColor": "#8e24aa",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300719680-3peh",
+      "toolId": "text",
+      "x": 170,
+      "y": 160,
+      "rotation": 0,
+      "text": "A1",
+      "strokeColor": "#43a047",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300726745-ja9o",
+      "toolId": "text",
+      "x": 290,
+      "y": 140,
+      "rotation": 0,
+      "text": "D6",
+      "strokeColor": "#0008ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300734165-vnf2",
+      "toolId": "text",
+      "x": 230,
+      "y": 190,
+      "rotation": 0,
+      "text": "Arduino Uno R4 ",
+      "strokeColor": "#4f80ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791300890496-ono8",
+      "toolId": "text",
+      "x": 230,
+      "y": 200,
+      "rotation": 0,
+      "text": "Adafruit Motor Shield v3",
+      "strokeColor": "#4f80ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791301232045-c4jn",
+      "toolId": "joint",
+      "x": 150,
+      "y": 80,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791301307175-1vx4",
+      "toolId": "rectangle",
+      "x": -20,
+      "y": 0,
+      "rotation": 0,
+      "strokeColor": "#8e24aa",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 40,
+      "shapeHeight": 80
+    },
+    {
+      "id": "drawing-1791301315363-gde4",
+      "toolId": "text",
+      "x": -20,
+      "y": 0,
+      "rotation": 270,
+      "text": "Reed Switch",
+      "strokeColor": "#8e24aa",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791301376923-w073",
+      "toolId": "joint",
+      "x": 0,
+      "y": -30,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498354804-j6yz",
+      "toolId": "joint",
+      "x": 0,
+      "y": 20,
+      "rotation": 0,
+      "strokeColor": "#8e24aa",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498356223-56mb",
+      "toolId": "joint",
+      "x": 150,
+      "y": 140,
+      "rotation": 0,
+      "strokeColor": "#8e24aa",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498389525-530s",
+      "toolId": "rectangle",
+      "x": -20,
+      "y": 100,
+      "rotation": 0,
+      "strokeColor": "#43a047",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 40,
+      "shapeHeight": 100
+    },
+    {
+      "id": "drawing-1791498399729-mywx",
+      "toolId": "text",
+      "x": -20,
+      "y": 100,
+      "rotation": 270,
+      "text": "Limit Switch",
+      "strokeColor": "#43a047",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498439473-8paf",
+      "toolId": "joint",
+      "x": 0,
+      "y": 70,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498440566-ql5u",
+      "toolId": "joint",
+      "x": 0,
+      "y": 140,
+      "rotation": 0,
+      "strokeColor": "#43a047",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498465062-k2st",
+      "toolId": "joint",
+      "x": 100,
+      "y": 70,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498474506-c05m",
+      "toolId": "bridge",
+      "x": 70,
+      "y": 70,
+      "rotation": 270,
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498498922-4vte",
+      "toolId": "joint",
+      "x": 150,
+      "y": 160,
+      "rotation": 0,
+      "strokeColor": "#43a047",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498675737-5acf",
+      "toolId": "text",
+      "x": 200,
+      "y": 0,
+      "rotation": 0,
+      "text": "M1",
+      "strokeColor": "#fb8c00",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498792805-b6hh",
+      "toolId": "rectangle",
+      "x": 200,
+      "y": -180,
+      "rotation": 0,
+      "strokeColor": "#fb8c00",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 40,
+      "shapeHeight": 120
+    },
+    {
+      "id": "drawing-1791498803508-ivdi",
+      "toolId": "rectangle",
+      "x": 170,
+      "y": -225,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 20,
+      "shapeHeight": 10
+    },
+    {
+      "id": "drawing-1791498826598-0yuu",
+      "toolId": "text",
+      "x": 200,
+      "y": -200,
+      "rotation": 270,
+      "text": "DC Motor",
+      "strokeColor": "#fb8c00",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498847967-g1cr",
+      "toolId": "voltage-plus-annotation",
+      "x": 190,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498851150-unex",
+      "toolId": "voltage-minus-annotation",
+      "x": 210,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498855144-fh7h",
+      "toolId": "joint",
+      "x": 180,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498855753-ff2i",
+      "toolId": "joint",
+      "x": 220,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498866811-nrui",
+      "toolId": "voltage-minus-annotation",
+      "x": 210,
+      "y": -20,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498869932-v99q",
+      "toolId": "voltage-plus-annotation",
+      "x": 190,
+      "y": -20,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498874700-p2a4",
+      "toolId": "joint",
+      "x": 210,
+      "y": -30,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498875098-w7lu",
+      "toolId": "joint",
+      "x": 190,
+      "y": -30,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791498943287-1emq",
+      "toolId": "rectangle",
+      "x": 200,
+      "y": -10,
+      "rotation": 0,
+      "strokeColor": "#fb8c00",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 40,
+      "shapeHeight": 40
+    },
+    {
+      "id": "drawing-1791499027019-oxdz",
+      "toolId": "rectangle",
+      "x": 0,
+      "y": -120,
+      "rotation": 0,
+      "strokeColor": "#0008ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12,
+      "shapeWidth": 60,
+      "shapeHeight": 60
+    },
+    {
+      "id": "drawing-1791499035769-lg4p",
+      "toolId": "text",
+      "x": -20,
+      "y": -120,
+      "rotation": 270,
+      "text": "Servo",
+      "strokeColor": "#0008ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499154611-0n93",
+      "toolId": "text",
+      "x": 10,
+      "y": -120,
+      "rotation": 0,
+      "text": "PWM",
+      "strokeColor": "#0008ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499168921-dmyx",
+      "toolId": "bridge",
+      "x": 120,
+      "y": 80,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499212054-2zzm",
+      "toolId": "joint",
+      "x": 310,
+      "y": 140,
+      "rotation": 0,
+      "strokeColor": "#0008ff",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499223166-owoe",
+      "toolId": "bridge",
+      "x": 70,
+      "y": -140,
+      "rotation": 180,
+      "strokeColor": "#0008ff",
+      "strokeWidth": 1,
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499331238-pwbh",
+      "toolId": "voltage-plus-annotation",
+      "x": 20,
+      "y": -100,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499334622-tg8a",
+      "toolId": "voltage-minus-annotation",
+      "x": 20,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499340258-c5rf",
+      "toolId": "joint",
+      "x": 150,
+      "y": 100,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499341507-r5g3",
+      "toolId": "joint",
+      "x": 30,
+      "y": -140,
+      "rotation": 0,
+      "strokeColor": "#000000",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499342454-3qvt",
+      "toolId": "joint",
+      "x": 30,
+      "y": -100,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499462965-cfjp",
+      "toolId": "text",
+      "x": 290,
+      "y": 100,
+      "rotation": 0,
+      "text": "D8",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499463755-gapx",
+      "toolId": "text",
+      "x": 290,
+      "y": 80,
+      "rotation": 0,
+      "text": "D9",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499464600-gets",
+      "toolId": "text",
+      "x": 290,
+      "y": 60,
+      "rotation": 0,
+      "text": "D10",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499465169-m6n7",
+      "toolId": "text",
+      "x": 290,
+      "y": 40,
+      "rotation": 0,
+      "text": "D11",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499466256-jibl",
+      "toolId": "text",
+      "x": 290,
+      "y": 20,
+      "rotation": 0,
+      "text": "D12",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499466838-tvut",
+      "toolId": "text",
+      "x": 290,
+      "y": 0,
+      "rotation": 0,
+      "text": "D13",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499469115-w9kk",
+      "toolId": "text",
+      "x": 290,
+      "y": 160,
+      "rotation": 0,
+      "text": "D5",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499541594-6igc",
+      "toolId": "text",
+      "x": 290,
+      "y": 120,
+      "rotation": 0,
+      "text": "D7",
+      "strokeColor": "#969696",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    },
+    {
+      "id": "drawing-1791499604374-xmzu",
+      "toolId": "joint",
+      "x": 100,
+      "y": -30,
+      "rotation": 0,
+      "strokeColor": "#e53935",
+      "border": false,
+      "borderStrokeWidth": 1,
+      "borderGridSpacing": 10,
+      "fontSize": 12
+    }
+  ],
+  "wires": [
+    {
+      "id": "wire-1791498446237-mke1",
+      "x": 150,
+      "y": 160,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -100,
+          "y": 0
+        },
+        {
+          "x": -100,
+          "y": -20
+        },
+        {
+          "x": -150,
+          "y": -20
+        }
+      ],
+      "strokeColor": "#43a047",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791498477263-quw6",
+      "x": 100,
+      "y": 70,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 0
+        }
+      ],
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791498479206-dx72",
+      "x": 60,
+      "y": 70,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 0
+        }
+      ],
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791498904592-jrpo",
+      "x": 190,
+      "y": -30,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -40
+        },
+        {
+          "x": -30,
+          "y": -40
+        },
+        {
+          "x": -30,
+          "y": -110
+        },
+        {
+          "x": -10,
+          "y": -110
+        }
+      ],
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791498909147-zg7i",
+      "x": 210,
+      "y": -30,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -40
+        },
+        {
+          "x": 30,
+          "y": -40
+        },
+        {
+          "x": 30,
+          "y": -110
+        },
+        {
+          "x": 10,
+          "y": -110
+        }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499122223-4elz",
+      "x": 150,
+      "y": 140,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -80,
+          "y": 0
+        },
+        {
+          "x": -80,
+          "y": -120
+        },
+        {
+          "x": -150,
+          "y": -120
+        }
+      ],
+      "strokeColor": "#8e24aa",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499135462-kzan",
+      "x": 150,
+      "y": 80,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -50,
+          "y": 0
+        },
+        {
+          "x": -50,
+          "y": -10
+        },
+        {
+          "x": -50,
+          "y": -180
+        },
+        {
+          "x": -120,
+          "y": -180
+        }
+      ],
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499141904-qg91",
+      "x": 150,
+      "y": 100,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -30,
+          "y": 0
+        },
+        {
+          "x": -30,
+          "y": -10
+        }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499145298-a6gg",
+      "x": 120,
+      "y": 60,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -200
+        },
+        {
+          "x": -90,
+          "y": -200
+        }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499171024-i1p4",
+      "x": 120,
+      "y": 70,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -10
+        }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499189725-dn49",
+      "x": 30,
+      "y": -120,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 40,
+          "y": 0
+        },
+        {
+          "x": 40,
+          "y": -10
+        }
+      ],
+      "strokeColor": "#0008ff",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499201485-4dg6",
+      "x": 70,
+      "y": -150,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -110
+        },
+        {
+          "x": 290,
+          "y": -110
+        },
+        {
+          "x": 290,
+          "y": 290
+        }
+      ],
+      "strokeColor": "#1100ff",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499208977-5v1z",
+      "x": 360,
+      "y": 140,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -50,
+          "y": 0
+        }
+      ],
+      "strokeColor": "#0008ff",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    },
+    {
+      "id": "wire-1791499600153-c17m",
+      "x": 100,
+      "y": -30,
+      "vertices": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": -100,
+          "y": 0
+        }
+      ],
+      "strokeColor": "#e53935",
+      "strokeWidth": 1,
+      "dash": [],
+      "arrowEnd": false
+    }
+  ]
+}
