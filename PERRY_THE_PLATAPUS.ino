@@ -14,9 +14,22 @@ int start_time = millis();
 //defines how long one loop is suposed to last in ms
 int loop_time = 20;
 //here is the variable that controls whether the hat should come out or not, feel free to rename it and its calls
-bool agentmode=false;
-bool chatmode=false;
-//
+bool agent_mode=false;
+bool chat_mode=false;
+//Pin setup
+const PIN_MAG = A0;
+const PIN_LIM = A1;
+const PIN_SER = D6;
+int V_mag=0;
+int V_lim=0;
+
+//Sensing Bounds
+const MAG_THRESH = 4.3;
+const LIM_THRESH = 4.9;
+//Sensor Previous State bools
+bool prev_mag = false;
+bool prev_lim = false;
+
 
 //DC Motor Section
 Adafruit_MotorShield AFMS = Adafruit_MotorShield();
@@ -35,21 +48,52 @@ void setup() {
   }
   Serial.println("Motor Shield found.");
   Facemotor->setSpeed(150);
-
+  V_mag=analogread(PIN_MAG);
+  V_lim=analogread(PIN_LIM);
+  //put servo setup code here
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   //put sensing code here
   start_time = millis();
+  //limit switch is connected from 5v to A0
+  //mag switch is also from 5v to Analog pin. seems like the source might decay over time so maybe code to see initial spike? also set dection threshold as a variable so I can change later
+  
+  //Mag switch detection and toggle
+  if (V_mag >= MAG_THRESH && !prev_mag){
+    agent_mode=true;
+    prev_mag= true:
+  }
+  else if (V_mag >= MAG_THRESH && prev_mag){
+    //do nothing
+  }
+  else{
+    agent_mode=false;
+    prev_mag = false;
+  }
+
+  //Lim switch detection and toggle
+  if (V_lim >= LIM_THRESH && !prev_lim ){
+    chat_mode = true;
+    prev_lim = true;
+  }
+  else if (V_lim>= LIM_THRESH && prev_lim){
+    //basically just do nothing
+  }
+  else{
+    chat_mode = false;
+    prev_lim = false;
+  }
+  
   //put
-  if (agentmode == true){
+  if (agent_mode == true){
     //put your agent servo code here
   }
-  else if (chatmode==true){
+  else if (chat_mode==true){
     Facemotor -> run(FORWARD);
   }
-  else if (chatmode == false){
+  else if (chat_mode == false){
     Facemotor -> run(RELEASE);
   }
   else{
