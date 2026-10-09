@@ -10,7 +10,9 @@
 //thats a lot of yapping, I hope its helpful
 
 //defines the time at the start of the loop
-int start_time = millis();
+int start_time = 0;
+//How long delay should last
+int del_time=0;
 //defines how long one loop is suposed to last in ms
 int loop_time = 20;
 //here is the variable that controls whether the hat should come out or not, feel free to rename it and its calls
@@ -20,12 +22,12 @@ bool chat_mode=false;
 const int PIN_MAG = 5;
 const int PIN_LIM = A1;
 const int PIN_SER = 6;
-int V_mag=0;
+int magon=0;
 int V_lim=0;
 
 //Sensing Bounds
-//const int MAG_THRESH = 4.3;
-const int LIM_THRESH = 0.1;
+// value out of 1023, so this is about 0.1v
+const int LIM_THRESH = 100;
 //Sensor Previous State bools
 bool prev_mag = false;
 bool prev_lim = false;
@@ -48,7 +50,8 @@ void setup() {
   }
   Serial.println("Motor Shield found.");
   Facemotor->setSpeed(150);
-  magon=digitalRead(PIN_MAG,INPUT_PULLUP);
+  pinMode(PIN_MAG, INPUT_PULLUP);
+  magon = digitalRead(PIN_MAG);   
   V_lim=analogRead(PIN_LIM);
   //put servo setup code here
 }
@@ -60,19 +63,22 @@ void loop() {
   //limit switch is connected from 5v to A0
   //mag switch is also from 5v to Analog pin. seems like the source might decay over time so maybe code to see initial spike? also set dection threshold as a variable so I can change later
   
-  
-  Mag_sense=
+  //update values
+  magon = digitalRead(PIN_MAG);
+  V_lim = analogRead(PIN_LIM);
+
   //Mag switch detection and toggle
   //magon is 1 if no magnet is present
   //and 0 if there is one 
-  if (magon == 0 && !prev_mag){
+  if (magon == LOW && !prev_mag){
     agent_mode=true;
     prev_mag= true;
   }
-  else if (magon == 0 && prev_mag){
+  else if (magon == LOW  && prev_mag){
     //do nothing
   }
   else{
+    //if magon == HIGH
     agent_mode=false;
     prev_mag = false;
   }
@@ -107,8 +113,19 @@ void loop() {
   
   
   Serial.print(start_time);
+  Serial.print(",");
   Serial.print(millis());
+  Serial.print(",");
+  Serial.print(magon);
+  Serial.print(",");
+  Serial.print(V_lim);
+  Serial.print(",");
   Serial.print(agent_mode);
-  Serial.print(chat_mode);
-  delay(loop_time-millis()+start_time);
+  Serial.print(",");
+  Serial.println(chat_mode);
+  
+  del_time=millis()-start_time;
+  if (del_time<loop_time){
+    delay(loop_time-del_time);
+  }
 }
