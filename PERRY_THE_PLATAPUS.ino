@@ -17,15 +17,15 @@ int loop_time = 20;
 bool agent_mode=false;
 bool chat_mode=false;
 //Pin setup
-const int PIN_MAG = A0;
+const int PIN_MAG = 5;
 const int PIN_LIM = A1;
 const int PIN_SER = 6;
 int V_mag=0;
 int V_lim=0;
 
 //Sensing Bounds
-const int MAG_THRESH = 4.3;
-const int LIM_THRESH = 4.9;
+//const int MAG_THRESH = 4.3;
+const int LIM_THRESH = 0.1;
 //Sensor Previous State bools
 bool prev_mag = false;
 bool prev_lim = false;
@@ -48,7 +48,7 @@ void setup() {
   }
   Serial.println("Motor Shield found.");
   Facemotor->setSpeed(150);
-  V_mag=analogRead(PIN_MAG);
+  magon=digitalRead(PIN_MAG,INPUT_PULLUP);
   V_lim=analogRead(PIN_LIM);
   //put servo setup code here
 }
@@ -60,12 +60,16 @@ void loop() {
   //limit switch is connected from 5v to A0
   //mag switch is also from 5v to Analog pin. seems like the source might decay over time so maybe code to see initial spike? also set dection threshold as a variable so I can change later
   
+  
+  Mag_sense=
   //Mag switch detection and toggle
-  if (V_mag >= MAG_THRESH && !prev_mag){
+  //magon is 1 if no magnet is present
+  //and 0 if there is one 
+  if (magon == 0 && !prev_mag){
     agent_mode=true;
     prev_mag= true;
   }
-  else if (V_mag >= MAG_THRESH && prev_mag){
+  else if (magon == 0 && prev_mag){
     //do nothing
   }
   else{
@@ -104,5 +108,7 @@ void loop() {
   
   Serial.print(start_time);
   Serial.print(millis());
+  Serial.print(agent_mode);
+  Serial.print(chat_mode);
   delay(loop_time-millis()+start_time);
 }
