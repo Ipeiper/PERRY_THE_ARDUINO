@@ -1,5 +1,7 @@
 #include <Wire.h>
 #include <Adafruit_MotorShield.h>
+#include <Servo.h>
+
 
 //This is where you should define variables.
 //remember, because I just forgot and had to fix it, that every line of code needs a semicolon after it
@@ -9,6 +11,8 @@
 //also, I highly recomend taking a look at the servo sweep example, you can look it up if you dont know how to get to it
 //thats a lot of yapping, I hope its helpful
 
+const int rest = 0; //servo resting degree
+const int top = 120;//servo top degree //lowkey messed the rest and top up... rest is at the top and top is at the bottom
 //defines the time at the start of the loop
 int start_time = 0;
 //How long delay should last
@@ -21,9 +25,11 @@ bool chat_mode=false;
 //Pin setup
 const int PIN_MAG = 5;
 const int PIN_LIM = A1;
-const int PIN_SER = 6;
+const int PIN_SER = 10;
 int magon=0;
 int V_lim=0;
+
+int servpos = 0;
 
 //Sensing Bounds
 // value out of 1023, so this is about 0.1v
@@ -37,6 +43,8 @@ bool prev_lim = false;
 Adafruit_MotorShield AFMS = Adafruit_MotorShield();
 Adafruit_DCMotor *Facemotor = AFMS.getMotor(1);
 
+//Servo Section 
+Servo servo;
 
 void setup() {
   // put your setup code here, to run once:
@@ -49,18 +57,26 @@ void setup() {
     while (1);
   }
   Serial.println("Motor Shield found.");
-  Facemotor->setSpeed(150);
+  Facemotor->setSpeed(30);
   pinMode(PIN_MAG, INPUT_PULLUP);
   magon = digitalRead(PIN_MAG);   
   V_lim=analogRead(PIN_LIM);
   //put servo setup code here
+  servo.attach(PIN_SER);
+  // Start servo at rest degrees
+  servo.write(rest);
+  delay(3000); 
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+ 
+
+
+  
   //put sensing code here
   start_time = millis();
-  //limit switch is connected from 5v to A0
+  //limit switch is connected from 5v to A1
   //mag switch is also from 5v to Analog pin. seems like the source might decay over time so maybe code to see initial spike? also set dection threshold as a variable so I can change later
   
   //update values
@@ -95,22 +111,20 @@ void loop() {
     chat_mode = false;
     prev_lim = false;
   }
-  
-  //put
-  if (agent_mode == true){
-    //put your agent servo code here
+
+  if (agent_mode==false) {
+    servo.write(top);    // servo moves up
+  } else if(agent_mode==true){
+    servo.write(rest);   // servo goes back to resting
   }
-  else if (chat_mode==true){
+
+  if (chat_mode==true){
     Facemotor -> run(FORWARD);
   }
   else if (chat_mode == false){
     Facemotor -> run(RELEASE);
   }
-  else{
-    // put something else here or delete if we have nothing to do if none of these are true
-
-  }
-  
+        
   
   Serial.print(start_time);
   Serial.print(",");
